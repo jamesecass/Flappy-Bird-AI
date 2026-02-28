@@ -68,10 +68,10 @@ class Pipe(pygame.Rect):
 # -----------------------------
 # NOTE: these load at import time. If you ever want "headless" training without images,
 # we can refactor, but this is simplest for now.
-BACKGROUND_PATH = r"C:\Users\james\Desktop\Python Folder\Flappy_Bird_AI\Images\flappybirdbg.png"
-BIRD_PATH = r"C:\Users\james\Desktop\Python Folder\Flappy_Bird_AI\Images\flappybird.png"
-TOP_PIPE_PATH = r"C:\Users\james\Desktop\Python Folder\Flappy_Bird_AI\Images\toppipe.png"
-BOTTOM_PIPE_PATH = r"C:\Users\james\Desktop\Python Folder\Flappy_Bird_AI\Images\bottompipe.png"
+BACKGROUND_PATH = r"flappybirdbg.png"
+BIRD_PATH = r"flappybird.png"
+TOP_PIPE_PATH = r"toppipe.png"
+BOTTOM_PIPE_PATH = r"bottompipe.png"
 
 background_image = pygame.image.load(BACKGROUND_PATH)
 bird_image = pygame.image.load(BIRD_PATH)
@@ -305,4 +305,5 @@ if __name__ == "__main__":
         render_frame(limit_fps=True)
 
         if done:
+
             reset_env()
